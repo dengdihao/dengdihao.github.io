@@ -349,7 +349,10 @@ $(window).load(function () {
 			src: ["audio/show.MP3", "audio/show.OGG"],
 			autoplay: true,
 			loop: true,
-			// volume: 0.5,
+			volume: 0.5,
+			onend: function () {
+				console.log('Finished!');
+			}
 		});
 
 		//点击导航li取消东西
@@ -378,7 +381,7 @@ $(window).load(function () {
 		$(document).keydown(function (e) {
 			e = window.event || e || e.which;
 			if (e.keyCode == 123) {
-				location.href = 'https://dengdihao.github.io';
+				location.href = 'http://www.cnblogs.com/studysuper/';
 				return false;
 			}
 		});
@@ -417,7 +420,8 @@ $(window).load(function () {
 			{ "color": "#34495e", "text": "HTML5" },
 			{ "color": "#3498db", "text": "JQUERY" },
 			{ "color": "#d35400", "text": "javascript" },
-			{ "color": "#9b59b6", "text": "Thinkphp" },
+			{ "color": "#9b59b6", "text": "Java" },
+			{ "color": "#9b59b6", "text": "Java" },
 		];
 		$('.Ws-tu').find('.Ws-PHOTOSHOP').each(function (index) {
 			$(this).find('em').text(Wjn[index].text);
