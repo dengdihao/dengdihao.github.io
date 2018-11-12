@@ -915,6 +915,7 @@ body {
 
 .yibaijia {
 	color: #337ab7;
+	font-weight: 700;
 }
 
 
@@ -995,7 +996,7 @@ body {
 	background:#d3d671;
 }
 
-.skills .php {
+.skills .java {
 	background:#BEDBE9;
 }
 
