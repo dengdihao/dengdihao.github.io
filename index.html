@@ -1,104 +1,727 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>我的小站</title>
-  <!-- 引用CSS，使用CDN加速访问 -->
-  <!-- <link rel="stylesheet" href="css/materialize.min.css"> -->
-  <link href="https://cdn.bootcss.com/materialize/1.0.0-rc.1/css/materialize.min.css" rel="stylesheet">
-  <style>
-  </style>
-</head>
-<body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">放置Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <!-- 空的链接 -->
-        <li><a href="#">首页</a></li>
-        <li><a href="#">博客</a></li>
-        <li><a href="#">关于我</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div id="content">
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title">卡片标题</span>
-            <p>我是一个很简单的卡片。我很擅长于包含少量的信息。我很方便，因为我只需要一个小标记就可以有效地使用。</p>
-          </div>
-          <div class="card-action">
-            <a href="#">这是一个链接</a>
-            <a href="#">这是一个链接</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m7">
-        <div class="card">
-          <div class="card-image">
-            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534224928436&di=89e448fd55f6bcdd72d77994fa318bcb&imgtype=0&src=http%3A%2F%2Fs8.sinaimg.cn%2Fmiddle%2F8ee3e0acxb0171b491f27%26690">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>我是一个很简单的卡片。我很擅长于包含少量的信息。我很方便，因为我只需要一个小标记就可以有效地使用。</p>
-          </div>
-          <div class="card-action">
-            <a href="#">这是一个链接</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card">
-          <div class="card-image">
-            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534224928435&di=8bd66382afde6b3a9391826c09c02ded&imgtype=0&src=http%3A%2F%2Fpic.feizl.com%2Fupload%2Fallimg%2F180126%2F291186uuwuygmswlt.png">
-            <span class="card-title">卡片标题</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-          </div>
-          <div class="card-content">
-            <p>我是一个很简单的卡片。我很擅长于包含少量的信息。我很方便，因为我只需要一个小标记就可以有效地使用。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">页脚内容</h5>
-            <p class="grey-text text-lighten-4">你可以用行和列来组织你的页脚内容。</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">链接</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">链接 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">链接 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">链接 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">链接 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © 2014 Copyright 文本
-        <a class="grey-text text-lighten-4 right" href="#!">更多链接</a>
-        </div>
-      </div>
-    </footer>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="description" content="王立战web前端个人简历，前端学习，前端开发，前端工程师简历">
+		<meta name="keywords" content="web前端，Rieko，web前端个人简历，前端开发简历网站，王立战的简历，前端工程师简历">
+		<meta name="author" content="Rieko">
+		<meta name="fragment" content="!">
+		<meta name="baidu-site-verification" content="UMMVJZAage" />
+		<title>Web前端工程师简历</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/reset_pc.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/loader.css">
+		<link rel="stylesheet" type="text/css" href="css/buttons.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/media.css">
+		<script src='js/jquery-1.12.0.min.js'></script>
+		<!--[if lte IE 9]>
+		    <script type="text/javascript">
+		        window.location = "https://showcc.github.io/error/"
+		    </script>
+  		<![endif]--> 
+	</head>
 
-  <!-- 挂个JQ的CDN -->
-  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-  <!-- 引用JS，使用CDN加速访问 -->
-  <!-- <script src="js/materialize.min.js"></script> -->
-  <script src="https://cdn.bootcss.com/materialize/1.0.0-rc.1/js/materialize.min.js"></script>
-</body>
+	<body>
+		<div class="W-head-portrait">
+			<a href="http://www.2019w.cn" target="_blank">
+				<img src="img/Headportrait2.jpg" alt="王立战的博客"/>
+				<div class="My-resume"><span>Rieko</span><i>'s</i> resume</div>
+				<div class="clear"></div>
+			</a>
+		</div> 
+		
+		<!--导航-->
+		<div class="nav-yuan">
+			<div class="nav-toggle">
+				<div class="icon"></div>
+			</div>
+			<div class="talkbubble">
+				导航
+			</div>
+		</div>
+		
+		<div class="navigation">
+			<ul>
+				<li><a href="javascript:;" class="a-active">首页<span class="span-active"></span></a></li>
+				<li><a href="javascript:;">关于我<span></span></a></li>
+				<li><a href="javascript:;">技能掌握<span></span></a></li>
+				<li><a href="javascript:;">我的经历<span></span></a></li>
+				<li><a href="javascript:;">我的作品<span></span></a></li>
+				<li><a href="javascript:;">联系我<span></span></a></li>
+				<li><a href="https://showcc.github.io" target="_blank">我的博客<span></span></a></li>
+			</ul>
+		</div>
+		<div class="W-logo">
+			<img src="img/wang.png"/>
+			<span class="W-rem">王立</span>
+			<div class="W-logo-jian">
+				<span class="W-boke">· Rieko's resume</span>
+				<span class="W-qq">QQ:939820199</span>
+			</div>
+			<span class="W-zhan">战</span>
+			<div class="clear"></div>
+		</div>
+		<div class="nav-zhe"></div>
+
+		<div class="swiper-container swiper-container1">
+			<div class="swiper-wrapper swiper-wrapper1">
+				<!-- 首页 -->
+				<div class="swiper-slide swiper-slide1">
+					<div class="w-mask">
+						<div class="slider" style="display: block;"> 
+							<div class="items-group">
+								<div class="item ">
+									<div class="block">
+										<span class="circleLight"></span>
+										<div class="text">
+											<h2>Hello, I'm Rieko</h2>
+											<strong>Life doesn’t get easier, you just get stronger</strong>
+											<p class="W-p1">我叫王立战</p>
+											<p class="W-p2">一名前端开发工程师</p>
+											<p class="W-mailbox">SHOW_wlz@163.com</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="wowslider-container">
+						<div class="ws_images">
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<img src="img/lun1.jpg " alt="王立战的前端简历" title=""/>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/lun4.png " alt="王立战的前端简历" title=""/>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/lun2.jpg " alt="王立战的前端简历" title=""/>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/lun3.jpg " alt="王立战的前端简历"  title=""/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 关于我 -->
+				<div class="swiper-slide W-aboutme">
+					<div class="W-sider-zhe"></div>
+					<div class="W-introduce">
+						<div class="W-introduce-me">
+							<img src="img/me1.jpg" alt="头像"/>
+						</div>
+						<p>
+							您好，我叫王立战，22岁，坐标南京。
+							我并不是计算机专业,但对前端很感兴趣，所以自学前端，今后的职业规划是朝着全栈发展，目前在学Thinkphp、AnjularJs。 在实习的五个月来,本人在公司主要负责整个页面的前端开发，配合后台人员实现产品前端界面效果与功能。写过响应式页面，移动端页面，pc端页面。小的来说，商城，企业网站，视频，音频，评论，地图等都有涉及。 在此很感谢<a href="http://www.yeebok.com" title="" target="_blank" class="yibaijia">苏州亿柏嘉软件有限公司</a> 对我的培养，让我学到了很多东西。
+						</p>
+						<p>
+							不浮躁，喜欢前端，执行力，学习能力都棒棒哒！目前，能做点粗糙设计（比如本网站）。
+						</p>
+					</div>
+				</div>
+				<!-- 技能掌握 -->
+				<div class="swiper-slide W-skill">
+					<div class="W-sider-zhe"></div>
+					<div id="content">
+						<div class="legend">
+							<h1>Skills:</h1>
+							<div class="skills">
+								<ul>
+									<li class="jq">JavaScript</li>
+									<li class="css">CSS3</li>
+									<li class="html">HTML5</li>
+									<li class="php">Thinkphp</li>
+									<li class="sql">jQuery</li>
+								</ul>
+							</div>
+						</div>
+						<div id="diagram"></div>
+					</div>
+
+					<div class="get">
+						<div class="arc">
+							<span class="text">JavaScript</span>
+							<input type="hidden" class="percent" value="65" />
+							<input type="hidden" class="color" value="#97BE0D" />
+						</div>
+						<div class="arc">
+							<span class="text">CSS3</span>
+							<input type="hidden" class="percent" value="80" />
+							<input type="hidden" class="color" value="#d7d8d8" />
+						</div>
+						<div class="arc">
+							<span class="text ">HTML5</span>
+							<input type="hidden " class="percent" value="75" />
+							<input type="hidden " class="color" value="#d3d671" />
+						</div>
+						<div class="arc">
+							<span class="text">Thinkphp</span>
+							<input type="hidden" class="percent" value="30" />
+							<input type="hidden" class="color" value="#BEDBE9" />
+						</div>
+						<div class="arc">
+							<span class="text">jQuery</span>
+							<input type="hidden" class="percent" value="80" />
+							<input type="hidden" class="color" value="#e4a787" />
+						</div>
+					</div>
+				</div>
+				<!--工作经历-->
+				<div class="swiper-slide W-work">
+					<div class="W-sider-zhe"></div>
+					<div class="W-work-nr">
+						<div class="W-work-left">						
+							<div class="W-jing-nr">
+								<h5>我的经历</h5>
+								<div class="W-jing-nr-parent">
+									<div class="W-time">
+										<span>2017</span>
+										<i>year</i>
+										<div class="W-zhuan"></div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>	
+							
+							<ul class="W-tim-ul">
+								<li class="W-li-top W-li-top-diyi">
+									<em>2017</em>
+									<i>02月</i>
+									<b></b>
+									<div class="clear"></div>
+									<span></span>
+								</li>
+								<li class="W-li-top W-margin-top1">
+									<em>2017</em>
+									<i>06月</i>
+									<b></b>
+									<div class="clear"></div>
+									<span></span>
+								</li>
+								<li class="W-li-top W-margin-top2">
+									<em>2017</em>
+									<i>08月</i>
+									<b></b>
+									<div class="clear"></div>
+									<span></span>
+								</li>
+							</ul>
+						</div>	
+						<div class="W-work-right">
+							<ul>
+								<li>
+									<p class="W-jie1">在<strong>苏州亿柏嘉软件有限公司</strong>实习</strong></p>
+									<p class="W-jie2">
+										<span>&lt;技术部/前端H5工程师&gt;</span>
+										负责PC端移动端页面制作。PSD切图后构建页面框架
+										利用HTML、JS、CSS3书写前端功能，让页面更充实丰富。
+										2017年07月初从该公司离职。
+									</p>	
+								</li>
+								<li class="W-time-top">
+									<p class="W-jie1">毕业于<strong>沙洲职业工学院</strong></p>
+									<p class="W-jie2">
+										<span>&lt;大专&gt;</span>
+										获得大学英语三级证书  获得计算机一级
+									</p>	
+								</li>
+								<li class="W-time-top">
+									<p class="W-jie1">就职于<strong>上海军果信息技术有限公司</strong></p>
+									<p class="W-jie2">
+										<span>&lt;技术部/前端H5工程师&gt;</span>
+										本人在该公司主要负责基于微信平台的H5轻应用开发，
+										配合后台人员实现产品前端界面效果与功能。
+									</p>										
+								</li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!-- 我的作品 -->
+				<div class="swiper-slide W-mywork">
+					<div class="W-sider-zhe"></div>
+					<div class="swiper-container swiper-container2">
+					    <div class="swiper-wrapper">
+					    	<div class="swiper-slide">
+								<div class="W-mywork-left">
+									<a href="http://www.show08.com" target="_blank">
+										<div class="W-work13"><span>我的简历网站(本网站)</span></div>
+									</a>
+								</div>
+								<div class="W-mywork-right">
+									<a href="https://showcc.github.io" target="_blank">
+										<div class="W-work14"><span>我的博客</span></div>
+									</a>
+								</div>
+								<div class="clear"></div>
+							</div>
+					        <div class="swiper-slide">
+					        	<div class="W-mywork-left">
+					        		<a href="http://www.wnclub.cn/" target="_blank">
+					        			<div class="W-work1"><span>唯恩优享荟官网</span></div>
+					        		</a>
+					        	</div>
+					        	<div class="W-mywork-right">
+					        		<a href="http://www.szbofu.com/" target="_blank">
+					        			<div class="W-work2"><span>博福生物医药科技官网</span></div>
+					        		</a>
+					        	</div>
+					        	<div class="clear"></div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="W-mywork-left">
+					        		<a href="https://showcc.github.io/gai1/GaiLeShi/index.html" target="_blank">
+					        			<div class="W-work3"><span>盖乐仕1(移动端)</span></div>
+					        		</a>
+					        	</div>
+					        	<div class="W-mywork-right">
+					        		<a href="https://showcc.github.io/gai1/GaiLeShi2/index.html" target="_blank">
+					        			<div class="W-work4"><span>盖乐仕2(移动端)</span></div>
+					        		</a>
+					        	</div>
+					        	<div class="clear"></div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="W-mywork-left">
+					        		<a href="https://showcc.github.io/gai1/XingBaKe/index.html" target="_blank">
+					        			<div class="W-work5"><span>微信点餐(移动端)</span></div>
+					        		</a>
+					        	</div>
+					        	<div class="W-mywork-right">
+					        		<a href="https://showcc.github.io/gai1/JiaTingHuanYuan/index.html" target="_blank">
+					        			<div class="W-work6"><span>家庭花园(移动端)</span></div>
+					        		</a>
+					        	</div>
+					        	<div class="clear"></div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="W-mywork-left">
+					        		<a href="https://showcc.github.io/gai1/JinQiangYu/index.html" target="_blank">
+					        			<div class="W-work7"><span>金枪鱼(移动端)</span></div>
+					        		</a>
+					        	</div>
+					        	<div class="W-mywork-right">
+					        		<a href="https://showcc.github.io/gai1/buji/index.html" target="_blank">
+					        			<div class="W-work8"><span>不急蛋糕</span></div>
+					        		</a>
+					        	</div>
+					        	<div class="clear"></div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="W-mywork-left">
+					        		<a href="https://showcc.github.io/gai1/jijian/index.html" target="_blank">
+					        			<div class="W-work9"><span>全能寄件</span></div>
+					        		</a>
+					        	</div>
+					        	<div class="W-mywork-right">
+					        		<a href="https://showcc.github.io/gai1/rouduoduo/index.html" target="_blank">
+					        			<div class="W-work10"><span>肉多多</span></div>
+					        		</a>
+					        	</div>
+					        	<div class="clear"></div>
+					        </div>
+							<div class="swiper-slide">
+								<div class="W-mywork-left">
+									<a href="https://showcc.github.io/gai1/zhongzhi/index.html" target="_blank">
+										<div class="W-work11"><span>众智官网</span></div>
+									</a>
+								</div>
+								<div class="W-mywork-right">
+									<a href="https://showcc.github.io/gai1/yimuji/index.html" target="_blank">
+										<div class="W-work12"><span>易募集</span></div>
+									</a>
+								</div>
+								<div class="clear"></div>
+
+
+							</div>
+						</div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination swiper-pagination2"></div>
+					</div>
+				</div>
+				<!-- 联系我 -->
+				<div class="swiper-slide W-contact-me">
+					<div class="W-sider-zhe"></div>
+					<div class="W-lian">
+						<div class="W-lian-right"></div>
+						<div class="clear"></div>
+						<div class="W-lian-bot"></div>
+						<div class="W-lian-zhong">
+							<div class="W-lian-heng">
+								<p class="W-lian-p1">CONTACT</p>
+								<p class="W-lian-p2">FOR ME</p>
+								<div class="clear"></div>
+							</div>
+							<div class="W-lian-nr">
+								<p class="W-lian-p3">
+									<em class="W-lian-e1">灵感</em>
+									<em class="W-lian-e2">代码</em>
+									<em class="W-lian-e3">梦想</em>
+									<em class="W-lian-e4">未来</em>
+								</p>
+								<p class="W-lian-p4">
+									学习是一个充实愉悦的过程<br />
+									喜欢尝试，期待新鲜事物<br />
+									前端即兴趣，兴趣即未来<br />
+									行路有良友，便是捷径<br />
+									期待有机会与您共事！
+								</p>
+								<div class="W-lian-bottom">
+									<a href="https://github.com/showcc" target="_blank">
+										<img src="img/github.png" alt="">
+										<span class="W-Github">Github</span>
+									</a>
+									<a href="javascript:;">
+										<img src="img/mail.png" alt="">
+										<span class="W-Mail">SHOW_wlz@163.com</span>
+									</a>
+									<a href="javascript:;">
+										<img src="img/qq.png" alt="">
+										<span class="W-qq"></span>
+									</a>
+									<a href="javascript:;">
+										<img src="img/wechat.png" alt="">
+										<span class="W-weixin"></span>
+									</a>
+									<a href="http://weibo.com/u/3941909649" target="_blank">
+										<img src="img/weibo.png" alt="">
+										<span class="W-weibo">Weibo</span>
+									</a>
+									<a href="https://www.zhihu.com/people/showccc/activities" target="_blank">    
+										<img src="img/zhihu.png" alt="">
+										<span class="W-zhihu">Zhihu</span>
+									</a>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination swiper-pagination1"></div>
+			<div class="W-yyue">
+				<span class="demoSpan1"></span>
+				<span class="demoSpan2"></span>
+			</div>
+		</div>
+
+		<!--关闭音乐-->
+		<div class="Ws-header">
+			<span>Rieko's resume</span>
+		</div>
+		<div class="W-yyue W-s-yyue">
+			<img src="img/nn.jpg"/>
+			<span class="demoSpan1"></span>
+			<span class="demoSpan2"></span>
+		</div>
+		
+		<!--开场动画-->
+		<div id="loader-wrapper">
+		    <div id="loader"></div>
+		    <div class="loader-section section-left"></div>
+		    <div class="loader-section section-right"></div>
+		    <div class="load_title"></div>
+		</div>
+
+	    <!-- 评论 -->
+	    <!-- 按钮 -->
+	    <div class="box bg-3">
+			<button class="button button--nanuk button--border-thin button--round-s">
+				<span>点</span>
+				<span>击</span>
+				<span>评</span>
+				<span>论</span>
+				<span>我</span>
+			</button>
+		</div>
+		
+		<!-- 手机端 -->
+		<div class="W-page2">
+			<div class="W-yi-bg">
+				<a href="http://www.show08.com" class="Ws-tou" alt="头像">
+					<img src="img/me1.jpg"/>
+				</a>
+				<h2>Hello, I'm Rieko</h2>
+				<strong>Life doesn’t get easier, you just get stronger</strong>
+				<p class="W-p1">我叫王立战</p>
+				<p class="W-p2">一名前端开发工程师</p>
+				<p class="W-mailbox">SHOW_wlz@163.com</p>
+				<div class="W-lian-bottom">
+					<a href="https://github.com/showcc" target="_blank">
+						<img src="img/github.png" alt="">
+						<span class="W-Github">Github</span>
+					</a>
+					<a href="javascript:;">
+						<img src="img/mail.png" alt="">
+						<span class="W-Mail">SHOW_wlz@163.com</span>
+					</a>
+					<a href="javascript:;">
+						<img src="img/qq.png" alt="">
+						<span class="W-qq"></span>
+					</a>
+					<a href="javascript:;">
+						<img src="img/wechat.png" alt="">
+						<span class="W-weixin"></span>
+					</a>
+					<a href="http://weibo.com/u/3941909649" target="_blank">
+						<img src="img/weibo.png" alt="">
+						<span class="W-weibo">Weibo</span>
+					</a>
+					<a href="https://www.zhihu.com/people/showccc/activities" target="_blank">    
+						<img src="img/zhihu.png" alt="">
+						<span class="W-zhihu">Zhihu</span>
+					</a>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="Ws-me">
+				<div class="Ws-me-title">
+					<h3>关于我</h3>
+					<i></i>
+				</div>
+				<p>
+					您好，我叫王立战，22岁，坐标南京。
+					我并不是计算机专业,但对前端很感兴趣，所以自学前端，
+					今后的职业规划是朝着全栈发展，目前在学Thinkphp、AnjularJs,vue。
+					 在实习的五个月来,本人在公司主要负责整个页面的前端开发，
+					 配合后台人员实现产品前端界面效果与功能。写过响应式页面，
+					 移动端页面，pc端页面。小的来说，商城，企业网站，视频，音频，评论，
+					 地图等都有涉及。
+					 在此很感谢<a href="http://www.yeebok.com" target="_blank" class="yibaijia">苏州亿柏嘉软件有限公司</a>对我的培养，让我学到了很多东西。目前就职于<a href="http://www.1paiclub.com/" target="_blank" class="yibaijia">上海军果信息技术有限公司</a>。
+				</p>
+				<p>
+					不浮躁，喜欢前端，执行力，学习能力都棒棒哒！目前，能做点粗糙设计（比如本网站）。
+				</p>
+			</div>
+	
+			<div class="Ws-ji">
+				<div class="Ws-me-title">
+					<h3>技能掌握</h3>
+					<i></i>
+				</div>
+				<p>
+					1.热爱前端，喜欢用最扎实的代码做出效果上最炫，代码上最合理的页面。<br />
+					2.熟悉使用photoshop把设计的图片按照需要交互的要求进行效果实现。<br />
+					3.熟悉html,css，能够兼容主流各种浏览器，比如ie8以上, chrome,firefox,opera。<br />
+					4.熟悉js dom, event,ajax能够编写基本的js原生代码。<br />
+					5.使用移动端的rem布局,响应式布局,解决不同移动端设备的适配和兼容问题<br />
+					6.熟悉bootstrap,Jquery类库进行pc端项目快速开发, 熟练使用Swiper,sui等插件进行移动端项目的开发。<br />
+					7.了解AngularJS框架,vue框架对模块化开发有着一定的理解。<br />
+					8.了解thinkphp5，php后台语言,了解mysql数据库，并对此有兴趣,期待向全栈方向发展<br />
+				</p>
+				<div class="Ws-tu">
+					<div class="Ws-PHOTOSHOP">
+						<em></em>
+						<div class="Ws-ph">
+							<div class="Ws-ph-f" data-percentage="40%" >
+							</div>
+						</div>
+					</div>
+					<div class="Ws-PHOTOSHOP">
+						<em></em>
+						<div class="Ws-ph">
+							<div class="Ws-ph-f" data-percentage="80%" >
+							</div>
+						</div>
+					</div>
+					
+					<div class="Ws-PHOTOSHOP">
+						<em></em>
+						<div class="Ws-ph">
+							<div class="Ws-ph-f" data-percentage="75%" >
+							</div>
+						</div>
+					</div>
+					
+					<div class="Ws-PHOTOSHOP">
+						<em></em>
+						<div class="Ws-ph">
+							<div class="Ws-ph-f" data-percentage="80%" >
+							</div>
+						</div>
+					</div>
+					
+					<div class="Ws-PHOTOSHOP">
+						<em></em>
+						<div class="Ws-ph">
+							<div class="Ws-ph-f" data-percentage="65%" >
+							</div>
+						</div>
+					</div>
+					
+					<div class="Ws-PHOTOSHOP">
+						<em></em>
+						<div class="Ws-ph">
+							<div class="Ws-ph-f" data-percentage="30%" >
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="Ws-jing">
+				<div class="Ws-me-title">
+					<h3>我的经历</h3>
+					<i></i>
+				</div>
+				<div class="Ws-jing-box">
+					<ul>
+						<li>
+							<div class="Ws-time">
+								<img src="img/WS_jing.jpg"/>
+								<span>2017年/02月初–2017年 /07月初</span>
+							</div>
+							<div class="Ws-left-kong"></div>
+							<div class="Ws-gs">
+								<strong>在苏州亿柏嘉软件技术有限公司实习</strong>
+								<em>技术部/前端工程师</em>
+								<p>
+									本人在该公司主要负责整个页面的前端开发，
+									配合后台人员实现产品前端界面效果与功能。
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="Ws-time">
+								<img src="img/WS_jing.jpg"/>
+								<span>2017年/06月</span>
+							</div>
+							<div class="Ws-left-kong"></div>
+							<div class="Ws-gs">
+								<strong>毕业沙洲职业工学院</strong>
+								<em>大专</em>
+								<p>
+									获得大学英语三级证书 获得计算机一级。
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="Ws-time">
+								<img src="img/WS_jing.jpg"/>
+								<span>2017年/08月初–至今</span>
+							</div>
+							<div class="Ws-left-kong"></div>
+							<div class="Ws-gs">
+								<strong>就职于上海军果信息技术有限公司</strong>
+								<em>技术部/前端H5工程师</em>
+								<p>
+									本人在该公司主要负责基于微信平台的H5轻应用开发，
+									配合后台人员实现产品前端界面效果与功能。
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="Ws-zuo">
+				<div class="Ws-me-title">
+					<h3>我的作品</h3>
+					<i></i>
+				</div>
+				<div class="swiper-container swiper-container3">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide swiper-slide1">
+				        	<a href="http://www.show08.com" target="_blank">我的简历网站</a>
+				        </div>
+				        <div class="swiper-slide swiper-slide2">
+				        	<a href="https://showcc.github.io" target="_blank">我的博客</a>
+				        </div>
+				        <div class="swiper-slide swiper-slide3">
+				        	<a href="http://www.wnclub.cn/" target="_blank">唯恩优享荟官网</a>
+				        </div>
+				        <div class="swiper-slide swiper-slide4">
+				        	<a href="http://www.szbofu.com/" target="_blank">博福生物医药科技官网</a>
+				        </div>
+				        <div class="swiper-slide swiper-slide5">
+				        	<a href="https://showcc.github.io/gai1/GaiLeShi/index.html" target="_blank">盖乐仕1(移动端)</a>
+				        </div>
+				        <div class="swiper-slide swiper-slide6">
+				        	<a href="https://showcc.github.io/gai1/GaiLeShi2/index.html" target="_blank">盖乐仕2(移动端)</a>
+				        </div>
+				        <div class="swiper-slide swiper-slide7">
+				        	<a href="https://showcc.github.io/gai1/XingBaKe/index.html" target="_blank">微信点餐(移动端)</a>
+				        </div>
+				        <div class="swiper-slide swiper-slide8">
+				        	<a href="https://showcc.github.io/gai1/JiaTingHuanYuan/index.html" target="_blank">家庭花园(移动端)</a>
+				        </div>
+				        <div class="swiper-slide swiper-slide9">
+				        	<a href="https://showcc.github.io/gai1/JinQiangYu/index.html" target="_blank">金枪鱼(移动端)</a>
+				        </div>
+				        <div class="swiper-slide swiper-slide10">
+				        	<a href="https://showcc.github.io/gai1/buji/index.html" target="_blank">不急蛋糕</a>
+				        </div>
+				    </div>		    
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination swiper-pagination3"></div>
+				</div>
+			</div>
+		
+			<div class="Ws-lianxi">
+				<div class="Ws-me-title">
+					<h3>联系我</h3>
+					<i></i>
+				</div>
+			</div>	
+			
+			<div class="Ws-hui">
+				<img src="img/top.png"/>
+			</div>
+		</div>
+		<!-- 手机端 -->
+		<div class="W-pinglun">
+			<div class="box bg-2">
+				<button class="W-ggb button button--aylen button--border-thin button--round-s">
+					关闭
+				</button>
+			</div>
+			<!--PC版-->
+			<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"  class="Ws-p-1"></div>
+			<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+			<script type="text/javascript">
+				window.changyan.api.config({
+					appid: 'cyta5NnD0',
+					conf: '91f9efb5bffadfdd35e0ded3d848081e'
+				});
+			</script>
+			<style type="text/css">
+				#SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w, #SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w .service-wrap-w, #SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w .service-wrap-w a {display: none!important;}
+				#SOHUCS #SOHU_MAIN .module-hot-topic {display: none!important;}
+			</style>
+			<div class="Ws-bei">
+				© Rieko | 苏ICP备17044739号
+			</div>	
+		</div>
+		<div style="display: none;">
+			<a href="http://www.2019w.cn" title="2019网"></a>
+			<a href="http://2019w.cn" title="2019网"></a>
+			<a href="http://vip.2019w.cn" title="小王vip视频解析"></a>
+		</div>
+		
+		<script src='js/swiper-3.4.1.min.js'></script>
+		<script src='js/wowslider.js'></script>
+		<script src='js/script.js'></script>
+		<script src="js/raphael.js"></script>
+		<script src='js/init.js'></script>
+		<script src='js/howler.min.js'></script>
+		<script src='js/index.js'></script>
+	</body>
+
 </html>
