@@ -15,7 +15,7 @@ $(window).load(function () {
 // 是DOM结构绘制完毕后就执行，不必等到加载完毕
 ; $(function () {
 	(function () {
-		console.log('Hi! 朋友，感谢您愿意调试简历代码。\n如果您有什么建议或者想学习前端，欢迎您加入我们,我们互相学习，共同进步^_^。\nQQ小群(https://jq.qq.com/?_wv=1027&k=4EC0LCk)');
+		console.log('Hi! 朋友，感谢您愿意调试简历代码。\n如果您有什么建议或者想学习前端，欢迎您加入我,我们互相学习，共同进步^_^。\nQQ:874611736');
 		setTimeout(function () { $('body').addClass('loaded'); }, 400);
 		var Timer = null,
 			aa = 1,
@@ -420,7 +420,6 @@ $(window).load(function () {
 			{ "color": "#34495e", "text": "HTML5" },
 			{ "color": "#3498db", "text": "JQUERY" },
 			{ "color": "#d35400", "text": "javascript" },
-			{ "color": "#9b59b6", "text": "Java" },
 			{ "color": "#9b59b6", "text": "Java" },
 		];
 		$('.Ws-tu').find('.Ws-PHOTOSHOP').each(function (index) {

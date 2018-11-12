@@ -1549,7 +1549,7 @@ body {
 }
 
 .W-lian-bottom {
-	width: 274px;
+	width: 176px;
 	margin: 0 auto;
 	height: auto;
 	margin-top: 24px;
@@ -1603,8 +1603,8 @@ body {
 }
 
 .W-lian-bottom .W-Mail {
-	width: 138px;
-	left: -49px;
+	width: 155px;
+  left: -64px;
 }
 
 .W-lian-bottom .W-Mail:before {
@@ -1635,8 +1635,8 @@ body {
 }
 
 .W-lian-bottom .W-Mail {
-	width: 138px;
-	left: -49px;
+	width: 155px;
+  left: -65px;
 }
 
 .W-lian-bottom .W-Mail:before {
