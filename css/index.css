@@ -1549,10 +1549,11 @@ body {
 }
 
 .W-lian-bottom {
-	width:274px;
+	width: 274px;
 	margin: 0 auto;
-	height:auto;
-	margin-top: 24px;
+	height: auto;
+	/* margin-top: 24px; */
+	margin-bottom: 20px;
 }
 
 .W-lian-bottom a {
